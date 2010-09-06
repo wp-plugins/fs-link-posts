@@ -5,11 +5,19 @@ Requires at least: 3.0.1
 Tested up to: 3.0.1
 Stable tag: trunk
 
-FS Link Posts is a simple plugin to enable you to manually associate a post with other posts you’ve created. It works with Posts, Pages and Custom Post Types
+FS Link Posts is a simple plugin to enable you to manually associate a post with other posts you’ve created.
 
 == Description ==
 
-Seriously, I have nothing more to say!
+It works with Posts, Pages and Custom Post Types, giving you a really simple way to make one post refer to another. Not to be confused with automated "Related Posts" plugins.
+
+It's probably most handy for Custom Post Types, where you may want to display a list of similar items based on factors that are indeterminable for an automation algorithm.
+
+**Current Limitations**
+* It's only a one-way reference for now
+* It's limited to linking posts of the same type
+
+If you need help or have ideas for more features, please use the plugin forum.
 
 == Installation ==
 
