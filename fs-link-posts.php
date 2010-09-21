@@ -1,21 +1,15 @@
 <?php
 /*
 Plugin Name: FS Link Posts
-Plugin URI: http://github.com/flipstorm/fs-linked-posts/
+Plugin URI: http://wordpress.org/extend/plugins/fs-link-posts/
 Description: Allows you to manually link multiple posts with the post you're editing
 Author: FlipStorm
-Version: 0.1
+Version: 0.2
 Author URI: http://flipstorm.co.uk/
 
 This software is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
-COMING SOON:
-- Admin panel for changing some basic options
-- Linking posts of different types
-- More flexible rendering of linked posts
-- Ordering of linked posts
 */
 
 /*
@@ -61,6 +55,8 @@ function fs_link_posts_meta_box_inner() {
 	
 	$args[ 'post_status' ] = 'publish';
 	$args[ 'orderby' ] = 'title';
+	$args [ 'order' ] = 'ASC';
+	$args [ 'numberposts' ] = '-1';
 	
 	if ( $post_ID ) {
 		$args[ 'post__not_in' ] = array( $post_ID );
